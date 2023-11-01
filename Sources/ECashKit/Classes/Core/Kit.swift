@@ -105,7 +105,7 @@ public class Kit: AbstractKit {
 
         switch networkType {
         case .mainNet:
-            blockValidatorChain.add(blockValidator: ForkValidator(concreteValidator: asertValidator, forkHeight: Kit.bchaChainForkHeight, expectedBlockHash: Kit.bchaChainForkBlockHash))
+            blockValidatorChain.add(blockValidator: ForkValidator(concreteValidator: asertValidator, forkHeight: Kit.xecChainForkHeight, expectedBlockHash: Kit.xecChainForkBlockHash))
             blockValidatorChain.add(blockValidator: asertValidator)
             blockValidatorChain.add(blockValidator: ForkValidator(concreteValidator: daaValidator, forkHeight: Kit.svChainForkHeight, expectedBlockHash: Kit.abcChainForkBlockHash))
             blockValidatorChain.add(blockValidator: daaValidator)
